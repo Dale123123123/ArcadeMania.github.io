@@ -1,0 +1,55 @@
+header {
+    position: relative; /* Ensure the header is positioned relatively */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+}
+
+.navigation {
+   background: transparent;
+}
+
+.search-container {
+    position: relative; /* Ensure the search container is positioned relatively */
+}
+
+#results {
+    position: absolute; /* Position the result box absolutely */
+    top: calc(100% + 10px); /* Position it below the search bar with a small gap */
+    left: 0;
+    z-index: 1; /* Ensure it appears above other content */
+    background-color: #ffffff; /* Background color for the result box */
+    border: 1px solid #ccc; /* Border for the result box */
+    border-top: none; /* Remove top border to avoid double borders */
+    border-radius: 0 0 4px 4px; /* Rounded corners at the bottom */
+    width: 100%; /* Full width */
+    display: none; /* Hide the result box by default */
+
+}
+
+#results.show {
+    display: block; /* Show the result box when the "show" class is applied */
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: (1, 50, 67, 0) ;/* Remove default margin to prevent indentation */
+}
+
+#results ul li {
+    cursor: pointer;
+    padding: 5px;
+    background-color: (31, 58, 147, 0.5);
+    border-bottom: 1px solid #ccc; /* Add bottom border between items */
+    border-radius: 0; /* Remove border radius to avoid uneven corners */
+}
+
+#results ul li:last-child {
+    border-bottom: none; /* Remove bottom border from last item */
+}
+
+#results ul li:hover {
+    background-color: #e0e0e0;
+}

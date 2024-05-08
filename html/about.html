@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/search-bar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <header>
+        <style>
+            p {
+                color: #ffffff;;
+            }
+            
+        </style>
+       <h3><b>Logo</b></h3>
+       <nav class="navigation">
+        <a href="/index.html">Home</a>
+        <a href="/html/about.html">About</a>
+        <a href="/html/services.html">Services</a>
+        <a href="/html/login.html">Log-in</a>
+       </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for games" oninput="showResults()">
+            <button onclick="search()">Go</button>
+        </div>
+        
+        <div id="results" style="display:none;">
+            <p>Results:</p>
+            <ul>
+                <li onclick="redirectToPage('breakout')">Breakout</li>
+                <li onclick="redirectToPage('pac-man')">Pac-man</li>
+                <li onclick="redirectToPage('pong')">Pong</li>
+                <li onclick="redirectToPage('Snake')">Snake Apple</li>
+                <li onclick="redirectToPage('space')">Space Invaders</li>
+                <li onclick="redirectToPage('tetris')">tetris</li>
+            </ul>
+        </div>
+    </header>
+</head>
+<body>
+    <center><b><p>
+        Welcome to Arcade Mania: Where Classics Meet Innovation<br><br>
+        
+        At Arcade Mania, we're redefining the gaming experience. Imagine a world where one platform hosts a myriad of timeless classics alongside cutting-edge gameplay. That's the reality we've created – the first game to host other games.
+        
+        Our journey began with a vision: to bring together the nostalgic charm of beloved classics with the excitement of new, revolutionary gaming experiences. With painstaking dedication and innovative technology, we've achieved just that.
+        
+        Picture yourself immersed in a universe where you can seamlessly transition from the addictive simplicity of Breakout to the adrenaline-pumping action of Space Invaders. Or perhaps you prefer the strategic challenge of Sudoku, the reflex-testing intensity of Snake, or the timeless allure of Tetris and Pac-Man. Whatever your preference, Arcade Mania has it all.
+        
+        What sets us apart isn't just our diverse library of games – it's the way we've woven them together into a cohesive, seamless gaming ecosystem. Say goodbye to juggling multiple platforms or switching between apps. With Arcade Mania, everything you need is right at your fingertips.
+        
+        But we're not just about nostalgia. We're also dedicated to pushing the boundaries of gaming innovation. Our platform serves as a launchpad for new ideas, new gameplay mechanics, and new experiences. Whether you're a seasoned gamer or new to the scene, there's always something exciting waiting for you here.
+        
+        Join us on this groundbreaking journey as we redefine what it means to play, to explore, and to experience the world of gaming. Welcome to Arcade Mania, where the classics meet innovation.
+    </b></center></p>
+    <div class="footer">
+        <p>©Dale Rolle & Nayriane Asahan</p>
+      </div>
+    <script src="/src/search-bar.js" async defer></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/search-bar.css">
+        <link rel="stylesheet" href="/css/updates.css">
+        <link rel="stylesheet" href="/css/body.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <header>
+            <h3><b>Logo</b></h3>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/services.html">Services</a>
+                <a href="/html/login.html">Log-in</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for games" oninput="showResults()">
+                <button onclick="search()">Go</button>
+            </div>
+            
+            <div id="results" style="display:none;">
+                <p>Results:</p>
+                <ul>
+                    <li onclick="redirectToPage('breakout')">Breakout</li>
+                    <li onclick="redirectToPage('pac-man')">Pac-man</li>
+                    <li onclick="redirectToPage('pong')">Pong</li>
+                    <li onclick="redirectToPage('Snake')">Snake Apple</li>
+                    <li onclick="redirectToPage('space')">Space Invaders</li>
+                    <li onclick="redirectToPage('tetris')">tetris</li>
+                </ul>
+            </div>
+        </header>
+    </head>
+    <body>
+        <div class="title">
+            <h2><center>Welcome to our demo game</center></h2>
+        </div>
+        <div class="description">
+            <p><center>Welcome! Thank you for joining us to play our demo game. We're thrilled to have you here exploring our world of adventure, strategy, and fun! Let's embark on this journey together and dive into the excitement of our game. Your participation means the world to us, and we can't wait to hear your feedback and insights. So, sit back, relax, and let the gaming adventure begin!</center></p>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="popup">
+                <h2>Update 1.3</h2>
+                <p>Date: 10/10/23</p>
+                <p>🎃👻 Trick or Treat, Players! 👻🎃<br>
+
+                    We've got some spine-tinglingly exciting news for you! Our latest update has just dropped, and it's packed with Halloween vibes and thrilling surprises. Gather 'round and prepare to be spellbound by what's in store:<br>
+                    
+                    🕸️ **New and Improved UI**: We've conjured up a bewitching new look for your gaming experience! Say goodbye to the old and hello to a sleek and spooky interface that will have you enchanted from the very first glance.<br>
+                    
+                    🎮 **Two New Games Unleashed**: Brace yourselves for a double dose of excitement! Introducing Tetris and Ping Pong to our roster of games. Whether you're stacking blocks or smashing balls, these games will have you on the edge of your broomstick.<br>
+                    
+                    🐞 **Minor Bugfixes**: We've banished pesky bugs into the shadows, ensuring a smoother and more seamless gaming experience for all.<br>
+                    
+                    🥚 **Hidden Easter Eggs**: Venture into the darkness and uncover hidden surprises sprinkled throughout our games. Will you be the one to unveil all the secrets lurking in the shadows?<br>
+                    
+                    But wait, there's more! As the moon waxes full, we're brewing up some big promises just for you:<br>
+                    
+                    1. 🌕 **The Full Game is Almost Complete**: Get ready to dive headfirst into an epic adventure, because the completion of the full game is just around the corner. Stay tuned for an experience that will leave you spellbound.<br>
+                    
+                    2. 🎃 **Three New Games Are Upcoming**: As the leaves turn and the nights grow longer, we're conjuring up not one, not two, but three new games to add to our collection. Prepare yourselves for an onslaught of thrills and chills like never before.<br>
+                    
+                    So grab your broomsticks, don your costumes, and join us on this hauntingly delightful journey through our latest update. Happy gaming, and may the spirits of Halloween guide you to victory! 🎃👻🌙</p>
+                    <br><br><br>
+                    <h2>Update 1.3.01</h2>
+                <p>Date: 10/03/23</p>
+                <p>🎮🌟 Exciting Update Alert! 🌟🎮<br>
+
+                    Greetings, gamers! We know it's been a while since our last update, and we want to extend our sincerest apologies for the delay. We've been hard at work behind the scenes, pouring our hearts and souls into bringing you something truly special:<br>
+                    
+                    1. 🚀 **Focus on the Full Game**: We want to express our gratitude for your patience as we've been laser-focused on putting the finishing touches on the full game experience. Your support means the world to us, and we're committed to delivering an adventure that will exceed your wildest expectations.<br>
+                    
+                    2. 🌈 **Updates on the Horizon**: But fear not, dear players! The wait is almost over. We're thrilled to announce that updates are right around the corner, packed with exciting new features, enhancements, and surprises that will elevate your gaming experience to new heights.<br>
+                    
+                    Behind the scenes, our team has been working tirelessly to bring our vision to life. From crafting immersive storylines to fine-tuning gameplay mechanics, every detail has been carefully considered to ensure that you're in for an unforgettable journey.<br>
+                    
+                    But wait, there's more! In the meantime, while you eagerly await the full game, we've added a special treat just for you:<br>
+                    
+                    3. 🍒 **Introducing Pacman**: Get ready to chase ghosts and gobble up pellets in the arcade classic, Pacman! Navigate the maze, avoid the ghosts, and see how many points you can rack up in this timeless adventure.<br>
+                    
+                    We want to take this moment to thank each and every one of you for your unwavering support and patience. Your passion for gaming fuels our drive to create, and we couldn't do it without you.<br>
+                    
+                    So, as we put the finishing touches on our masterpiece, we invite you to sit back, relax, and enjoy some gaming nostalgia with Pacman. Your patience and loyalty mean everything to us, and we can't wait to share our creation with you.<br>
+                    
+                    Thank you for being part of our gaming community. Here's to many more adventures together! 🎮✨<br>
+                    
+                    Wishing you all a wonderful day filled with joy, excitement, and plenty of gaming fun!<br>
+                    </p>
+                <br><br>
+                <h2>Update 1.2</h2>
+                <p>Date: 7/14/23</p>
+                <p>🎉🚀 Exciting News Alert! 🚀🎉<br>
+
+                    We're thrilled to announce that a brand new update has just landed, bringing a whirlwind of fresh features and thrilling enhancements to your gaming experience. Get ready to dive into a world of excitement with the latest additions:<br>
+                    
+                    1. 🌟 **New Login and Signup Page**: Say hello to a sleek and streamlined login and signup experience! We've revamped our pages to make signing up and logging in smoother than ever before. Get ready to breeze through the process and jump straight into the action!<br>
+                    
+                    2. 🐍 **Introducing Snake Apple**: Prepare to embark on a nostalgic journey with our newest game addition, Snake Apple! Test your reflexes and strategy as you navigate the snake through a maze to devour delicious apples. It's classic gaming fun with a tasty twist!<br>
+                    
+                    3. 🐞 **Minor Bug Fixes**: We've been hard at work squashing pesky bugs to ensure a smoother and more enjoyable gaming experience for all our players. Say goodbye to glitches and hello to seamless gameplay!<br>
+                    
+                    But wait, there's more! We're not stopping here. Here's a sneak peek at the exciting things on the horizon:<br>
+                    
+                    1. 📅 **New Update in the Works**: Brace yourselves for even more excitement! We're already cooking up a new update set to release on November. Get ready for a fresh wave of features and improvements that will take your gaming experience to the next level.<br>
+                    
+                    2. 🎮 **Two New Games on the Horizon**: The fun never stops! We're thrilled to announce that not one, but two new games are in the pipeline, just waiting to be unleashed. Stay tuned for more details on these thrilling additions!<br>
+                    
+                    3. 🌟 **Development of the Full Game Continues**: The journey doesn't end here! Our dedicated team is hard at work developing the full game experience, ensuring that every moment you spend with us is filled with excitement and adventure.<br>
+                    
+                    So, what are you waiting for? Dive into the action, explore the new features, and get ready for an unforgettable gaming experience like never before. The fun awaits! 🎮✨</p>
+                    🎮🚀 Welcome to a New Era of Gaming! 🚀🎮
+
+                <br><br><br>
+                <h2>Update 1.1</h2>
+                <p>06/01/23</p>
+                <p>🎮🚀 Welcome to a New Era of Gaming! 🚀🎮<br>
+
+                    We're thrilled to unveil a groundbreaking new demo game that is set to revolutionize the way you play. Get ready to embark on an adventure like never before with our latest offerings:<br>
+                    
+                    1. 🌟 **The First Game with Games Inside!**: That's right, you heard it here first! Our demo game is not just one game but a portal to a world of endless gaming possibilities. Say goodbye to boredom and hello to non-stop fun!<br>
+                    
+                    2. 🚀 **Introducing Space Invaders**: Blast off into outer space with the iconic classic, Space Invaders! Defend Earth from an alien invasion as you navigate through the galaxy, dodging enemy fire and unleashing your own arsenal of firepower. It's time to save the planet and become a hero of the cosmos!<br>
+                    
+                    But hold on to your controllers, because the excitement doesn't end there. We've got some colossal announcements to share:<br>
+                    
+                    1. 🎁 **Next Update Coming Soon**: Brace yourselves for even more excitement, because the next update is just around the corner! Prepare to dive into a treasure trove of new features, improvements, and surprises that will keep you on the edge of your seat.<br>
+                    
+                    2. 🛠️ **Full Game in Progress**: The journey to greatness is underway! We're dedicated to bringing you the ultimate gaming experience, and that means the full game is now officially in the works. Stay tuned for updates, sneak peeks, and behind-the-scenes looks at what's to come.<br>
+                    
+                    And remember, your feedback is invaluable to us! If you encounter any bugs or have suggestions to share, don't hesitate to reach out to us at dalehumpreymrolle@gmail.com. Together, we'll make this gaming adventure truly unforgettable.<br>
+                    
+                    So what are you waiting for? Grab your controllers, gather your friends, and let the gaming revolution begin! 🎮✨</p>
+                <button class="close-button" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>©Dale Rolle & Nayriane Asahan</p>
+          </div>
+        <script src="/src/program.js" async defer></script>
+        <script src="/src/search-bar.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Snake</title>
+        <link rel="stylesheet" href="/css/snake.css">
+        <script src="/src/snake.js"></script>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/search-bar.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <header>
+            <h3><b>Logo</b></h3>
+            <nav class="navigation">
+                <a href="/index.html">Home</a>
+                <a href="/html/about.html">About</a>
+                <a href="/html/services.html">Services</a>
+                <a href="/html/login.html">Log-in</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for games" oninput="showResults()">
+                <button onclick="search()">Go</button>
+            </div>
+            
+            <div id="results" style="display:none;">
+                <p>Results:</p>
+                <ul>
+                    <li onclick="redirectToPage('breakout')">Breakout</li>
+                    <li onclick="redirectToPage('pac-man')">Pac-man</li>
+                    <li onclick="redirectToPage('pong')">Pong</li>
+                    <li onclick="redirectToPage('Snake')">Snake Apple</li>
+                    <li onclick="redirectToPage('space')">Space Invaders</li>
+                    <li onclick="redirectToPage('tetris')">tetris</li>
+                </ul>
+            </div>
+        </header>
+    </head>
+
+    <body>
+        <h1>Snake</h1>
+        <canvas id="board"></canvas>
+        <div class="footer">
+            <p>©Dale Rolle & Nayriane Asahan</p>
+          </div>
+        <script src="/src/search-bar.js" async defer></script>
+    </body>
+</html>

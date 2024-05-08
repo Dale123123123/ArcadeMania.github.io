@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/search-bar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <header>
+        <style>
+            p {
+                color: #000000;;
+            }
+
+            body{
+    min-height: 100vh;
+    background: url('/images/services\ background.avif') no-repeat;
+    background-size: cover;
+}
+
+        </style>
+     <h3><b>Logo</b></h3>
+     <nav class="navigation">
+        <a href="/index.html">Home</a>
+        <a href="/html/about.html">About</a>
+        <a href="/html/services.html">Services</a>
+        <a href="/html/login.html">Log-in</a>
+     </nav>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for games" oninput="showResults()">
+            <button onclick="search()">Go</button>
+        </div>
+        
+        <div id="results" style="display:none;">
+            <p>Results:</p>
+            <ul>
+                <li onclick="redirectToPage('breakout')">Breakout</li>
+                <li onclick="redirectToPage('pac-man')">Pac-man</li>
+                <li onclick="redirectToPage('pong')">Pong</li>
+                <li onclick="redirectToPage('Snake')">Snake Apple</li>
+                <li onclick="redirectToPage('space')">Space Invaders</li>
+                <li onclick="redirectToPage('tetris')">tetris</li>
+            </ul>
+        </div>
+    </header>
+</head>
+<body>
+    <center><bold><p>
+        1. Game Making
+
+At Arcade Mania, we're not just players; we're creators. Our team of experienced game developers is passionate about bringing your ideas to life. Whether you're a seasoned game designer or a newcomer to the field, we're here to guide you through every step of the game-making process. From conceptualization and storyboarding to coding and implementation, we'll work closely with you to ensure that your vision is realized in the most captivating and immersive way possible. With our expertise and dedication, your game will stand out in an ever-evolving industry.
+<br>
+2. Sprite Making
+
+Every pixel counts in the world of gaming, and that's where our sprite-making services come in. Our talented artists specialize in creating high-quality sprites that breathe life into your game. Whether you need characters, backgrounds, objects, or animations, we'll meticulously craft each element to suit your aesthetic preferences and gameplay requirements. With attention to detail and a commitment to excellence, we'll ensure that your game's visuals are nothing short of breathtaking.
+<br>
+3. Innovation in Gaming
+
+At Arcade Mania, innovation is at the heart of everything we do. We're constantly pushing the boundaries of gaming technology and design to deliver experiences that are truly groundbreaking. Our team of visionaries is dedicated to exploring new ideas, experimenting with novel mechanics, and pushing the limits of what's possible in the world of gaming. Whether it's through cutting-edge gameplay features, revolutionary storytelling techniques, or innovative user interfaces, we're always striving to redefine the gaming landscape and create experiences that leave a lasting impression.
+<br>
+4. Video Guides
+
+Navigating the world of game development can be daunting, but fear not – our video guides are here to help. Whether you're a beginner looking to learn the basics or an experienced developer seeking advanced tips and tricks, our comprehensive video tutorials cover a wide range of topics, from coding and art design to marketing and monetization. With clear, concise explanations and step-by-step demonstrations, you'll gain the knowledge and skills you need to bring your game ideas to fruition. Let us be your trusted guide on your game development journey.
+<br>
+5. Playtesting
+
+Before you release your game to the world, it's crucial to gather feedback from real players. That's where our playtesting services come in. Our dedicated team of testers will thoroughly evaluate your game, providing valuable insights and constructive criticism to help you identify strengths, weaknesses, and areas for improvement. Whether it's balancing gameplay mechanics, fine-tuning controls, or refining level design, we'll work closely with you to ensure that your game is polished to perfection before it hits the market. With our rigorous playtesting process, you can release your game with confidence, knowing that it's been thoroughly vetted by experts.
+
+
+    </bold></center></p>
+    <div class="footer">
+        <p>©Dale Rolle & Nayriane Asahan</p>
+      </div>
+    <script src="/src/search-bar.js" async defer></script>
+</body>
+</html>
